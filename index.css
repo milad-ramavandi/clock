@@ -4,26 +4,14 @@ body {
   justify-content: center;
   background-color: darkslateblue;
 }
-.parent-container {
-  position: relative;
-  margin-top: 100px;
-}
-.parent-container::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 620px;
-  height: 1px;
-  margin-left: 8px;
-  background-color: blue;
-}
 .container {
   position: relative;
   width: 620px;
   height: 320px;
+  margin-top: 100px;
   border-radius: 8px;
   border: 8px solid bisque;
-  background-color: rgb(34, 33, 33);
+  background-color: rgb(47, 46, 46);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -33,6 +21,7 @@ body {
   content: "";
   position: absolute;
   top: 100%;
+  margin-top: 2px;
   width: 500px;
   height: 30px;
   border-bottom-left-radius: 5px;
@@ -42,10 +31,11 @@ body {
 .container::before {
   content: "";
   position: absolute;
-  left: 50%;
-  width: 1px;
-  height: 320px;
-  background-color: blue;
+  top: 50%;
+  width: 620px;
+  height: 160px;
+  background-color: rgb(65, 64, 64);
+  border-top: 2px solid black;
 }
 .hourElement,
 .minuteElement,
@@ -57,9 +47,11 @@ body {
   justify-content: center;
   height: inherit;
   color: white;
+  border-right: 2px solid blue;
+  position: relative;
 }
 
-.bottom {
-  background-color: rgb(58, 56, 56);
-  color: white;
+.secondElement:last-child{
+  border: none;
 }
+
