@@ -1,6 +1,6 @@
-const hourElement = document.querySelector('.hourElement') as HTMLSpanElement;
-const minuteELement = document.querySelector('.minuteElement') as HTMLSpanElement;
-const secondElement = document.querySelector('.secondElement') as HTMLSpanElement;
+const hourElement = document.querySelector('.hourElement') as HTMLDivElement;
+const minuteELement = document.querySelector('.minuteElement') as HTMLDivElement;
+const secondElement = document.querySelector('.secondElement') as HTMLDivElement;
 
 
 function displayClock() {

@@ -18,4 +18,4 @@ function displayClock() {
     }
     setTimeout(displayClock, 1000);
 }
-// displayClock()
+displayClock();
